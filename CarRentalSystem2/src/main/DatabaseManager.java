@@ -16,7 +16,7 @@ public class DatabaseManager {
         try {
             // Establish the connection
         	Class.forName("org.sqlite.JDBC");
-            Connection conn = DriverManager.getConnection("jdbc:sqlite:C:\\SQlite\\car_rental.db");
+            Connection conn = DriverManager.getConnection("jdbc:sqlite:car_rental.db");
             System.out.println("Connected to SQlite successfully!");
             return conn;
         } catch (Exception e) {
